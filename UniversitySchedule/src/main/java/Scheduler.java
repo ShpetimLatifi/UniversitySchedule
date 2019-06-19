@@ -3,7 +3,7 @@ import java.util.*;
 @SuppressWarnings("ALL")
 public class Scheduler {
 
-    List<String> sallat = Arrays.asList("112", "113", "114", "115", "153");
+    List<String> sallat = Arrays.asList("112", "113", "114", "153");
     List<String> sallatK = Arrays.asList("Lab M K", "Lab V K", "Lab B K");
 
     List<String> days = new ArrayList<>(Arrays.asList("H", "M", "Me", "E", "P"));
@@ -24,15 +24,6 @@ public class Scheduler {
     List<String> thirdYearCs = cs.thirdYear();
     List<String> thirdYearMf = mf.thirdYear();
     List<String> thirdYearM = mt.thirdYear();
-    //noice
-//
-//    private boolean sameProfessor(String p1, String p2) {
-//        int indexOfp1 = p1.indexOf("-");
-//        String substringP1 = p1.substring(0, indexOfp1);
-//        int indexofP2 = p2.indexOf("-");
-//        String substringOfp2 = p2.substring(0, indexofP2);
-//        return substringP1.contains(substringOfp2);
-//    }
 
     List<List<String>> CS = new ArrayList<>();
     List<List<String>> MAT = new ArrayList<>();
@@ -72,7 +63,7 @@ public class Scheduler {
                     if (tempSallat.size() == 0 && tempSallatK.size() == 0) {
                         break;
                     }
-                    String firstYearAndHour = days.get(i) + " Viti 1: " + hours.get(j) + " " + firstYearCs.get(k);
+                    String firstYearAndHour = days.get(i) + " " + hours.get(j) + " " + firstYearCs.get(k);
 
                     if (sameProfessor(firstYearCsSchedule, firstYearAndHour)) {
                         continue;
@@ -99,7 +90,7 @@ public class Scheduler {
                     if (tempSallat.size() == 0 && tempSallatK.size() == 0) {
                         break;
                     }
-                    String secondYearAndHour = days.get(i) + " " + "Viti 2: " + hours.get(j) + " " + secondYearCs.get(k);
+                    String secondYearAndHour = days.get(i) + " " + hours.get(j) + " " + secondYearCs.get(k);
 
                     if (sameProfessor(secondYearCsSchedule, secondYearAndHour)) {
                         continue;
@@ -125,7 +116,7 @@ public class Scheduler {
                     if (tempSallat.size() == 0 && tempSallatK.size() == 0) {
                         break;
                     }
-                    String thirdYearAndHour = days.get(i) + " " + "Viti 3: " + hours.get(j) + " " + thirdYearCs.get(k);
+                    String thirdYearAndHour = days.get(i) + " " + hours.get(j) + " " + thirdYearCs.get(k);
 
                     if (sameProfessor(thirdYearCsSchedule, thirdYearAndHour)) {
                         continue;
@@ -163,7 +154,7 @@ public class Scheduler {
                     if (tempSallat.size() == 0 && tempSallatK.size() == 0) {
                         break;
                     }
-                    String firstYearAndHour = days.get(i) + " " + "Viti 1: " + hours.get(j) + " " + firstYearM.get(k);
+                    String firstYearAndHour = days.get(i) + " " + hours.get(j) + " " + firstYearM.get(k);
 
                     if (sameProfessor(firstYearMatSchedule, firstYearAndHour)) {
                         continue;
@@ -190,7 +181,7 @@ public class Scheduler {
                     if (tempSallat.size() == 0 && tempSallatK.size() == 0) {
                         break;
                     }
-                    String secondYearAndHour = days.get(i) + " " + "Viti 2: " + hours.get(j) + " " + secondYearM.get(k);
+                    String secondYearAndHour = days.get(i) + " " + hours.get(j) + " " + secondYearM.get(k);
 
                     if (sameProfessor(secondYearMatSchedule, secondYearAndHour)) {
                         continue;
@@ -216,7 +207,7 @@ public class Scheduler {
                     if (tempSallat.size() == 0 && tempSallatK.size() == 0) {
                         break;
                     }
-                    String thirdYearAndHour = days.get(i) + " " + "Viti 3: " + hours.get(j) + " " + thirdYearM.get(k);
+                    String thirdYearAndHour = days.get(i) + " " + hours.get(j) + " " + thirdYearM.get(k);
 
                     if (sameProfessor(thirdYearMatSchedule, thirdYearAndHour)) {
                         continue;
@@ -254,7 +245,7 @@ public class Scheduler {
                     if (tempSallat.size() == 0 && tempSallatK.size() == 0) {
                         break;
                     }
-                    String firstYearAndHour = days.get(i) + " " + "Viti 1: " + hours.get(j) + " " + firstYearMf.get(k);
+                    String firstYearAndHour = days.get(i) + " " + hours.get(j) + " " + firstYearMf.get(k);
 
                     if (sameProfessor(firstYearMfSchedule, firstYearAndHour)) {
                         continue;
@@ -281,7 +272,7 @@ public class Scheduler {
                     if (tempSallat.size() == 0 && tempSallatK.size() == 0) {
                         break;
                     }
-                    String secondYearAndHour = days.get(i) + " " + "Viti 2: " + hours.get(j) + " " + secondYearMf.get(k);
+                    String secondYearAndHour = days.get(i) + " " + hours.get(j) + " " + secondYearMf.get(k);
 
                     if (sameProfessor(secondYearMfSchedule, secondYearAndHour)) {
                         continue;
@@ -307,7 +298,7 @@ public class Scheduler {
                     if (tempSallat.size() == 0 && tempSallatK.size() == 0) {
                         break;
                     }
-                    String thirdYearAndHour = days.get(i) + " " + "Viti 3: " + hours.get(j) + " " + thirdYearMf.get(k);
+                    String thirdYearAndHour = days.get(i) + " " + hours.get(j) + " " + thirdYearMf.get(k);
 
                     if (sameProfessor(thirdYearMfSchedule, thirdYearAndHour)) {
                         continue;
