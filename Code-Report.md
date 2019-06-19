@@ -71,3 +71,4 @@ e pjesës tjetër të projektit. Si pjesë e punës në të ardhmen, kemi mendua
 mungojnë programit, dhe poashtu t’i ndajmë drejtimet nëpër ditë të ndryshme, dhe njëkohësisht ta implementojmë algoritmin Hill Climbing
 me një popullatë fillestare, dhe fitnessin ta njehsojmë ndamas me anë të një metode e cila do kthente rezultatin e dëshiruar.
 
+https://drive.google.com/file/d/1Pfo1DGhsEU8edr4wqqp7jkAjD4nriAkD/view?usp=sharing
